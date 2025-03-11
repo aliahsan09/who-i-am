@@ -9,6 +9,9 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],  // For headings
         roboto: ["Roboto", "sans-serif"],    // For other text
       },
+      colors: {
+        mono: "#4bffa5",
+      },
     },
   },
   plugins: [],
