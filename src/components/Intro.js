@@ -21,13 +21,13 @@ function Intro() {
       setTypingLine(line[x]);
       setmainWord(lineWord[x]);
       x==2? x=0 : x++ ;
-    }, 3501);
+    }, 3500);
   };
 
   return (
     <div id='userSection' onLoad={userLoad} className='h-dvh flex flex-wrap'>
       <div className='w-full h-4/5 pl-14 pb-14 flex items-end justify-start'>
-        <img src={profilepic} alt="Profile Picture" className='w-7/12 hover:rotate-z30' />
+        <img src={profilepic} alt="Profile Picture" loading='lazy' className='w-7/12 hover:rotate-z30' />
         <div className=' h-fit font-roboto -ml-20 mb-12 text-2xl '>
           <p>Hello, I’m <span className='text-mono'><strong>Ali Ahsan</strong></span>,<br />A Software Engineer Based in Pakistan.</p>
         </div>
@@ -47,10 +47,10 @@ function Intro() {
 
         <div className='w-1/12 h-full'>
           <FontAwesomeIcon id='socialIcons-main' onClick={toggleIcons} className='mr-4 p-2 z-20 rounded-full bg-mono text-black cursor-pointer absolute bottom-20 right-16' size='xl' icon={faAt} />
-          <FontAwesomeIcon id='socialIcons' className='socialIcons hideIcons mr-4 p-2 z-10 rounded-full cursor-pointer hover:text-mono absolute bottom-44 right-10' size='xl' icon={faGithub} />
-          <FontAwesomeIcon id='socialIcons' className='socialIcons hideIcons mr-3 p-2 z-10 rounded-full cursor-pointer hover:text-mono absolute bottom-40 right-28' size='xl' icon={faLinkedin} />
-          <FontAwesomeIcon id='socialIcons' className='socialIcons hideIcons mr-3 p-2 z-10 rounded-full cursor-pointer hover:text-mono absolute bottom-28 right-40' size='xl' icon={faFacebookF} />
-          <FontAwesomeIcon id='socialIcons' className='socialIcons hideIcons mr-3 p-2 z-10 rounded-full cursor-pointer hover:text-mono absolute bottom-10 right-40' size='xl' icon={faInstagram} />
+          <a href="https://github.com/aliahsan09" target='_blank'><FontAwesomeIcon id='socialIcons' className='socialIcons hideIcons mr-4 p-2 z-10 rounded-full cursor-pointer hover:text-mono absolute bottom-44 right-10' size='xl' icon={faGithub} /></a>
+          <a href=""><FontAwesomeIcon id='socialIcons' className='socialIcons hideIcons mr-3 p-2 z-10 rounded-full cursor-pointer hover:text-mono absolute bottom-40 right-28' size='xl' icon={faLinkedin} /></a>
+          <a href=""><FontAwesomeIcon id='socialIcons' className='socialIcons hideIcons mr-3 p-2 z-10 rounded-full cursor-pointer hover:text-mono absolute bottom-28 right-40' size='xl' icon={faFacebookF} /></a>
+          <a href=""><FontAwesomeIcon id='socialIcons' className='socialIcons hideIcons mr-3 p-2 z-10 rounded-full cursor-pointer hover:text-mono absolute bottom-10 right-40' size='xl' icon={faInstagram} /></a>
         </div>
       </div>
 

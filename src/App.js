@@ -11,9 +11,24 @@ function App() {
     backgroundColor: "#0c0c0c"
   });
 
+  const changeMode = () => {
+    if(mode.color == "#f9f9f9") {
+      setMode({
+        color: "#0c0c0c",
+        backgroundColor: "#f9f9f9"
+      })
+    }
+    else {
+      setMode({
+        color: "#f9f9f9",
+        backgroundColor: "#0c0c0c"
+      })
+    }
+  }
+
   return (
     <div className="App h-full" style={mode}>
-      <NavBar />
+      <NavBar themeMode={changeMode}/>
       <Intro />
     </div>
   );
