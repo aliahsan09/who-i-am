@@ -5,11 +5,43 @@
 }
 
 .navLinks:hover {
-  width: 6rem; /* Set an appropriate width */
+  width: 6rem;
+  /* Set an appropriate width */
 }
+
 .navLinks.shortTxt:hover {
   width: 4rem !important;
 }
+
 .navLinks.longTxt:hover {
   width: 7rem !important;
+}
+
+.hideIcons {
+  bottom: 5rem !important;
+  right: 4rem !important;
+  opacity: 0 !important;
+  rotate: 270deg;
+  transition: all 500ms ease !important;
+}
+
+.socialIcons {
+  transition: all 500ms ease !important;
+}
+
+.typewriter-line {
+  animation: typing 3.5s linear infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
 }
