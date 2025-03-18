@@ -6,7 +6,7 @@ import { faSun, faMoon } from "@fortawesome/free-regular-svg-icons";
 
 function NavBar(props) {
     return (
-        <div className='flex justify-end items-center absolute top-5 right-0 bg-transparent px-20 w-fit h-14'>
+        <div className='flex justify-end items-center fixed bg-transparent px-20 mt-7 w-full h-14'>
             <nav className='flex font-bold'>
                 <div className='navLinks flex items-center justify-start overflow-hidden mx-3 cursor-pointer' >
                     <a href='' className='flex items-center justify-center'>
@@ -14,16 +14,16 @@ function NavBar(props) {
                         <span>Myself</span>
                     </a>
                 </div>
+                <div className='navLinks flex items-center justify-start overflow-hidden mx-3 cursor-pointer' >
+                    <a href='#skillsSection' className='flex items-center justify-center'>
+                        <FontAwesomeIcon className='mr-4' size='xl' icon={faLaptopCode} />
+                        <span>Skills</span>
+                    </a>
+                </div>
                 <div className='navLinks longTxt flex items-center justify-start overflow-hidden mx-3 cursor-pointer' >
                     <a href='' className='flex items-center justify-center'>
                         <FontAwesomeIcon className='mr-4' size='xl' icon={faBook} />
                         <span>Education</span>
-                    </a>
-                </div>
-                <div className='navLinks flex items-center justify-start overflow-hidden mx-3 cursor-pointer' >
-                    <a href='' className='flex items-center justify-center'>
-                        <FontAwesomeIcon className='mr-4' size='xl' icon={faLaptopCode} />
-                        <span>Skills</span>
                     </a>
                 </div>
                 <div className='navLinks longTxt flex items-center justify-start overflow-hidden mx-3 cursor-pointer' >

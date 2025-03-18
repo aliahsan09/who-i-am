@@ -1,3 +1,9 @@
+body {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: #0c0c0c;
+}
+
 .navLinks {
   width: 2.25rem;
   overflow: hidden;
@@ -18,8 +24,8 @@
 }
 
 .hideIcons {
-  bottom: 5rem !important;
-  right: 4rem !important;
+  bottom: 4rem !important;
+  right: 3rem !important;
   opacity: 0 !important;
   rotate: 270deg;
   transition: all 500ms ease !important;
@@ -46,5 +52,33 @@
   }
   100% {
     width: 0;
+  }
+}
+
+
+/* Skill Cards Styling */
+
+.blob {
+  filter: blur(30px);
+  position: absolute;
+  z-index: 0;
+  border-radius: 100%;
+  transition: all 10ms linear;
+}
+
+
+.punchAnimate {
+  animation-timeline: view();
+  animation: punch 300ms ease-in;
+}
+
+@keyframes punch {
+  from {
+    transform: scale(3);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
 }
