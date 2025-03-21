@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../App.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAt } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faFacebookF, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faFacebookF, faLinkedin, faInstagram } from "react-icons/fa6";
 import profilepic from '../assets/profile-pic.webp';
 
 function Intro() {
