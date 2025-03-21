@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import '../App.css';
-import { FaGithub, FaFacebookF, FaLinkedin, FaInstagram, FaAt, FaLink } from "react-icons/fa";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAt } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faFacebookF, faLinkedin, faInstagram } from "react-icons/fa6";
 import profilepic from '../assets/profile-pic.webp';
 
 function Intro() {
@@ -44,18 +46,18 @@ function Intro() {
         </div>
 
         <div className='w-1/12 h-fit fixed place-self-end z-50 right-0 bottom-0'>
-          <FaAt id='socialIcons-main' onClick={toggleIcons} className='mr-4 p-2 z-20 rounded-full bg-mono text-black cursor-pointer absolute bottom-16 right-12' size='xl' />
+          <FontAwesomeIcon id='socialIcons-main' onClick={toggleIcons} className='mr-4 p-2 z-20 rounded-full bg-mono text-black cursor-pointer absolute bottom-16 right-12' size='xl' icon={faAt} />
           <a href="https://github.com/aliahsan09" target='_blank'>
-            <FaGithub id='gitLink' className='socialIcons hideIcons mr-4 p-2 z-10 rounded-full cursor-pointer hover:text-mono absolute bottom-44 right-10' size='xl' />
+            <FontAwesomeIcon id='gitLink' className='socialIcons hideIcons mr-4 p-2 z-10 rounded-full cursor-pointer hover:text-mono absolute bottom-44 right-10' size='xl' icon={faGithub} />
           </a>
           <a href="https://www.linkedin.com/in/ali-ahsan-71501231a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank'>
-            <FaLinkedin id='LinkedInLink' className='socialIcons hideIcons mr-3 p-2 z-10 rounded-full cursor-pointer hover:text-mono absolute bottom-40 right-28' size='xl' />
+            <FontAwesomeIcon id='LinkedInLink' className='socialIcons hideIcons mr-3 p-2 z-10 rounded-full cursor-pointer hover:text-mono absolute bottom-40 right-28' size='xl' icon={faLinkedin} />
           </a>
           <a href="https://www.facebook.com/share/1Fmz8Y1DKk/" target='_blank'>
-            <FaFacebookF id='fbLink' className='socialIcons hideIcons mr-3 p-2 z-10 rounded-full cursor-pointer hover:text-mono absolute bottom-28 right-40' size='xl' />
+            <FontAwesomeIcon id='fbLink' className='socialIcons hideIcons mr-3 p-2 z-10 rounded-full cursor-pointer hover:text-mono absolute bottom-28 right-40' size='xl' icon={faFacebookF} />
           </a>
           <a href="https://www.instagram.com/aliahsann15?igsh=dncydXlkMmpzcDkz" target='_blank'>
-            <FaInstagram id='InstaLink' className='socialIcons hideIcons mr-3 p-2 z-10 rounded-full cursor-pointer hover:text-mono absolute bottom-10 right-40' size='xl' />
+            <FontAwesomeIcon id='InstaLink' className='socialIcons hideIcons mr-3 p-2 z-10 rounded-full cursor-pointer hover:text-mono absolute bottom-10 right-40' size='xl' icon={faInstagram} />
           </a>
         </div>
       </div>

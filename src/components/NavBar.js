@@ -1,7 +1,8 @@
 import React from 'react'
 import '../App.css';
-import { FaSun, FaMoon, FaUser, FaDownload, FaLaptopCode, FaBook } from "react-icons/fa";
-import { RiContactsBook3Fill } from "react-icons/ri";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser, faDownload, faLaptopCode, faBook, faContactCard, faAt } from "@fortawesome/free-solid-svg-icons";
+import { faSun, faMoon } from "@fortawesome/free-regular-svg-icons";
 
 function NavBar(props) {
     return (
@@ -9,38 +10,38 @@ function NavBar(props) {
             <nav className='flex font-bold'>
                 <div className='navLinks flex items-center justify-start overflow-hidden mx-3 cursor-pointer' >
                     <a href='' className='flex items-center justify-center'>
-                        <FaUser className='mr-4' size='xl' />
+                        <FontAwesomeIcon className='mr-4' size='xl' icon={faUser} />
                         <span>Myself</span>
                     </a>
                 </div>
                 <div className='navLinks flex items-center justify-start overflow-hidden mx-3 cursor-pointer' >
                     <a href='#skillsSection' className='flex items-center justify-center'>
-                        <FaLaptopCode className='mr-4' size='xl' />
+                        <FontAwesomeIcon className='mr-4' size='xl' icon={faLaptopCode} />
                         <span>Skills</span>
                     </a>
                 </div>
                 <div className='navLinks longTxt flex items-center justify-start overflow-hidden mx-3 cursor-pointer' >
                     <a href='' className='flex items-center justify-center'>
-                        <FaBook className='mr-4' size='xl' />
+                        <FontAwesomeIcon className='mr-4' size='xl' icon={faBook} />
                         <span>Education</span>
                     </a>
                 </div>
                 <div className='navLinks longTxt flex items-center justify-start overflow-hidden mx-3 cursor-pointer' >
                     <a href='' className='flex items-center justify-center'>
-                        <RiContactsBook3Fill className='mr-4' size='xl' />
+                        <FontAwesomeIcon className='mr-4' size='xl' icon={faContactCard} />
                         <span>Contacts</span>
                     </a>
                 </div>
                 <div className='navLinks shortTxt flex items-center justify-start overflow-hidden mx-3 cursor-pointer' >
                     <a href='' className='flex items-center justify-center'>
-                        <FaDownload className='mr-4' size='xl' />
+                        <FontAwesomeIcon className='mr-4' size='xl' icon={faDownload} />
                         <span>CV</span>
                     </a>
                 </div>
             </nav>
             <div className='w-2'>
-                <FaSun size='xl' color='#black' cursor='pointer' id='sunIcon' className='hover:text-mono hidden' onClick={() => { toggleIcons(); props.themeMode(); }} />
-                <FaMoon size='xl' color='white' cursor='pointer' id='moonIcon' className='hover:text-mono' onClick={() => { toggleIcons(); props.themeMode(); }} />
+                <FontAwesomeIcon icon={faSun} size='xl' color='#black' cursor='pointer' id='sunIcon' className='hover:text-mono hidden' onClick={() => { toggleIcons(); props.themeMode(); }} />
+                <FontAwesomeIcon icon={faMoon} size='xl' color='white' cursor='pointer' id='moonIcon' className='hover:text-mono' onClick={() => { toggleIcons(); props.themeMode(); }} />
             </div>
         </div>
     )
