@@ -2,7 +2,6 @@ import React from 'react'
 import '../App.css';
 import { FaSun, FaMoon, FaUser, FaDownload, FaLaptopCode, FaBook } from "react-icons/fa";
 import { RiContactsBook3Fill } from "react-icons/ri";
-import { FaL } from 'react-icons/fa6';
 
 function NavBar(props) {
     return (
